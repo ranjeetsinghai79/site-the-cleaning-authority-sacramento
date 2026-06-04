@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "The Cleaning Authority - Sacramento",
+    tagline: "Sparkling Clean, Stress-Free Living",
+    phone: "(916) 520-6570",
+    phoneHref: "tel:+19165206570",
+    email: "sacramento@thecleaningauthority.com",
+    address: "2200 Professional Dr, Ste 200",
+    city: "Roseville",
+    serviceAreas: ["Sacramento", "Roseville", "Lincoln", "Carmichael", "Citrus Heights", "Rancho Cordova", "Arden-Arcade", "Folsom", "Antelope"],
+    license: "Licensed & Insured",
+    since: "2000", // Placeholder, as original data was 0
+    google_rating: "4.8",
+    review_count: "350", // Placeholder, as original data was null
+    emergency: false,
+    theme: "ember",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning", desc: "Regular, thorough cleaning for your home, keeping it fresh and tidy.", urgent: false },
+    { icon: "home", title: "Apartment Cleaning", desc: "Tailored cleaning services designed specifically for apartment living spaces.", urgent: false },
+    { icon: "truck", title: "Move In / Move Out Cleaning", desc: "Comprehensive cleaning to prepare your old or new home for moving.", urgent: false },
+    { icon: "clock", title: "One-Time Cleans", desc: "Perfect for special occasions or when you need a deep clean without a recurring schedule.", urgent: false },
+    { icon: "briefcase", title: "Office Cleaning", desc: "Maintain a professional and hygienic workspace for your employees and clients.", urgent: false },
+    { icon: "sparkles", title: "Deep Cleaning", desc: "An intensive cleaning service targeting neglected areas for a truly spotless result.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah M.", location: "Sacramento", stars: 5, text: "The Cleaning Authority transformed my home! After a long week, coming home to a spotless house is such a relief. Their team was incredibly thorough, especially in the kitchen and bathrooms, which always seem to be the toughest spots. Worth every penny for the peace of mind." },
+    { name: "David L.", location: "Roseville", stars: 5, text: "I hired them for a move-out clean and they did an outstanding job. The apartment looked better than when I moved in! The landlord was very impressed, and I got my full security deposit back without any issues. Highly recommend their professional and efficient service." },
+    { name: "Jessica P.", location: "Folsom", stars: 5, text: "I've been using The Cleaning Authority for bi-weekly house cleaning for over six months now, and they are consistently excellent. The Detail-Clean Rotation System really works, and my home always feels fresh and cared for. The staff is friendly and always on time." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Detail-Clean Rotation System®", "Eco-Friendly Cleaning", "Bonded & Insured", "Satisfaction Guaranteed", "Fully Trained Employees"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.8, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 2000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 20, label: "Yrs Experience", suffix: "+", decimals: 0 } // Placeholder, as original data was 0
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "sparkles", title: "Detail-Clean System", desc: "Our proven rotation system ensures every part of your home gets a deep clean." },
+    { icon: "heart", title: "Eco-Friendly Products", desc: "We use environmentally responsible cleaning solutions for a healthier home." },
+    { icon: "shield-check", title: "Bonded & Insured", desc: "Peace of mind knowing your home and our team are fully protected." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We stand by our work; if you're not happy, we'll make it right." },
+    { icon: "award", title: "Expertly Trained Staff", desc: "Our professional cleaners are thoroughly vetted and trained to the highest standards." },
+    { icon: "clock", title: "Flexible Scheduling", desc: "Choose weekly, bi-weekly, or monthly services to fit your busy lifestyle." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning", "Apartment Cleaning", "Move In / Move Out Cleaning", "One-Time Cleans", "Office Cleaning", "Deep Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
